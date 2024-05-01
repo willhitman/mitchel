@@ -74,15 +74,15 @@ def load_data():
 
 
 def main():
-  st.set_page_config(page_title="The MDP System", page_icon="HIC.jpeg")
+  st.set_page_config(page_title="The MDP System", page_icon="HIC.png")
   df = load_data()
   train_size = int(0.6 * len(df))
 
   if True:
-    house_icon = "house.jpeg"
-    graph_up_icon = "process.jpeg"
-    receipt_icon = "output.jpeg"
-    about = 'about.jpeg'
+    house_icon = "house.png"
+    graph_up_icon = "process.png"
+    receipt_icon = "output.png"
+    about = 'about.png'
     a,b,c, d = st.columns(4)
     a.image(house_icon, width = 100)
     b.image(graph_up_icon, width = 100)
@@ -96,7 +96,7 @@ def main():
 
     if selected_page == 'Home':
       st.markdown("<h1 style='text-align: center; color: black;'>The MDP COMDX System</h1>", unsafe_allow_html=True)   
-      st.image('HIC.jpeg')
+      st.image('HIC.png')
 
     elif selected_page == 'MDP Process':
         
